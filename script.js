@@ -1,3 +1,5 @@
+const p = document.querySelector("p");
+const h1 = document.querySelector("h1");
 const container = document.querySelector("#container");
 const actionBtns = document.querySelector(".action-btns");
 const valImg = document.querySelector(".val-img");
@@ -11,6 +13,8 @@ yesBtn.addEventListener("mouseover", () => {
 yesBtn.addEventListener("click", () => {
   actionBtns.style.display = "none";
   valImg.style.display = "block";
+  h1.innerHTML = `<h2 style="font-size: 6rem;">Hurray!!! </h2> She Said Yes ❤️`;
+  p.style.display = "none";
 });
 
 container.addEventListener("mousemove", (e) => {
